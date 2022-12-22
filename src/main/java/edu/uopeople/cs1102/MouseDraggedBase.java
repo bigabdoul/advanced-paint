@@ -7,35 +7,35 @@ import javafx.scene.input.MouseEvent;
  *
  */
 public abstract class MouseDraggedBase {
-	// The current location of the mouse, when the user presses the mouse button.
-	private int currentX, currentY;
-	
-	/**
-	 * The previous location of the mouse, when the user is drawing by dragging the mouse.
-	 */
-	protected double prevX, prevY;
-	
-	/**
-	 * This is set to true while the user is dragging with the mouse.
-	 */
-	protected boolean dragging;
-	
-	/**
-	 * The handler for a MousePressed event.
-	 * @param evt The MousePressed event data.
-	 */
-	protected void mousePressed(MouseEvent evt) {
-    	onMousePressed(evt.getX(), evt.getY());
+    // The current location of the mouse, when the user presses the mouse button.
+    private int currentX, currentY;
+    
+    /**
+     * The previous location of the mouse, when the user is drawing by dragging the mouse.
+     */
+    protected double prevX, prevY;
+    
+    /**
+     * This is set to true while the user is dragging with the mouse.
+     */
+    protected boolean dragging;
+    
+    /**
+     * The handler for a MousePressed event.
+     * @param evt The MousePressed event data.
+     */
+    protected void mousePressed(MouseEvent evt) {
+        onMousePressed(evt.getX(), evt.getY());
     }
     
-	/**
-	 * Handles the MousePressed event. This method should be overwritten and called by subclasses.
-	 * @param x The x-coordinate of the mouse.
-	 * @param y The y-coordinate of the mouse.
-	 * @return true if the user is already dragging with the mouse; otherwise, false.
-	 */
+    /**
+     * Handles the MousePressed event. This method should be overwritten and called by subclasses.
+     * @param x The x-coordinate of the mouse.
+     * @param y The y-coordinate of the mouse.
+     * @return true if the user is already dragging with the mouse; otherwise, false.
+     */
     protected boolean onMousePressed(double x, double y) {
-    	if (dragging)       // Ignore mouse presses that occur when user is already dragging.
+        if (dragging)       // Ignore mouse presses that occur when user is already dragging.
             return true;    // (This can happen if the user presses two mouse buttons at the same time.)
 
         currentX = (int)x;  // x-coordinate where the user clicked.
@@ -63,11 +63,11 @@ public abstract class MouseDraggedBase {
      * @return false if no dragging is happening; otherwise, true.
      */
     protected boolean onMouseDragged(double x, double y) {
-    	 if (!dragging)
+         if (!dragging)
              return false;  // Nothing to do because the user isn't dragging.
 
-    	 currentX = (int)x;   // x-coordinate of mouse.
-    	 currentY = (int)y;   // y-coordinate of mouse.
+         currentX = (int)x;   // x-coordinate of mouse.
+         currentY = (int)y;   // y-coordinate of mouse.
          
          return true; // dragging
     }
@@ -85,7 +85,7 @@ public abstract class MouseDraggedBase {
      * @return true if the user is dragging with the mouse; otherwise, false.
      */
     public boolean isDragging() {
-    	return dragging;
+        return dragging;
     }
 
     /**
@@ -93,7 +93,7 @@ public abstract class MouseDraggedBase {
      * @return An integer that represents the mouse's current x-coordinate.
      */
     public int getCurrentX() {
-    	return currentX;
+        return currentX;
     }
 
     /**
@@ -101,7 +101,7 @@ public abstract class MouseDraggedBase {
      * @return An integer that represents the mouse's current y-coordinate.
      */
     public int getCurrentY() {
-    	return currentY;
+        return currentY;
     }
     
     /**
@@ -109,7 +109,7 @@ public abstract class MouseDraggedBase {
      * @return A double precision floating-point number that represents the mouse's previous x-coordinate.
      */
     public double getPrevX() {
-    	return prevX;
+        return prevX;
     }
 
     /**
@@ -117,6 +117,6 @@ public abstract class MouseDraggedBase {
      * @return A double precision floating-point number that represents the mouse's previous y-coordinate.
      */
     public double getPrevY() {
-    	return prevY;
+        return prevY;
     }
 }

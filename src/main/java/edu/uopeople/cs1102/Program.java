@@ -34,14 +34,14 @@ public final class Program extends Application {
     @Override
     public void start(Stage stage) {
         
-    	final int width = 600;  // width of the canvas
-    	final int height = 400; // height of the canvas
-    	final int paletteWidth = 56;
+        final int width = 600;  // width of the canvas
+        final int height = 400; // height of the canvas
+        final int paletteWidth = 56;
 
         // Creating an AdvancedPaint object with a GridPane
         // handles the boilerplate code required to get started.
-    	AdvancedPaint paint = AdvancedPaint.createWithGridPane(width, height, PalettePos.Left);
-    	
+        AdvancedPaint paint = AdvancedPaint.createWithGridPane(width, height, PalettePos.Left);
+        
         /* Configure the GUI and show the window. */
         Scene scene = new Scene(paint.getGridPane(), width + paletteWidth, height);
         stage.setScene(scene);

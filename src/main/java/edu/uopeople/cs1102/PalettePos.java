@@ -6,12 +6,12 @@ package edu.uopeople.cs1102;
  */
 public enum PalettePos {
     /** Position to the left. */
-	Left,
+    Left,
 
     /** Position to the right. */
-	Right,
+    Right,
 
-	// The following positions are not supported yet.
-	//Top,
-	//Bottom,
+    // The following positions are not supported yet.
+    //Top,
+    //Bottom,
 }
