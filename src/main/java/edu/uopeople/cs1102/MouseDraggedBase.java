@@ -63,13 +63,13 @@ public abstract class MouseDraggedBase {
      * @return false if no dragging is happening; otherwise, true.
      */
     protected boolean onMouseDragged(double x, double y) {
-         if (!dragging)
-             return false;  // Nothing to do because the user isn't dragging.
+        if (!dragging)
+        return false;  // Nothing to do because the user isn't dragging.
 
-         currentX = (int)x;   // x-coordinate of mouse.
-         currentY = (int)y;   // y-coordinate of mouse.
-         
-         return true; // dragging
+        currentX = (int)x;   // x-coordinate of mouse.
+        currentY = (int)y;   // y-coordinate of mouse.
+        
+        return true; // dragging
     }
 
     /**

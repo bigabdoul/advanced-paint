@@ -19,46 +19,46 @@ public final class ColorUtil {
      * The standard color palette.
      */
     public static final Color[] standardPalette = {
-            Color.BLACK,
-            Color.GRAY,
-            
-            Color.rgb(136, 0, 21), // Dark Red
-            Color.RED, 
-            
-            Color.ORANGE,
-            Color.rgb(255, 201, 14), // Gold
-            
-            Color.color(0.95, 0.9, 0), // Yellow
-            Color.rgb(239, 228, 176), // Light Yellow
+        Color.BLACK,
+        Color.GRAY,
+        
+        Color.rgb(136, 0, 21), // Dark Red
+        Color.RED, 
+        
+        Color.ORANGE,
+        Color.rgb(255, 201, 14), // Gold
+        
+        Color.color(0.95, 0.9, 0), // Yellow
+        Color.rgb(239, 228, 176), // Light Yellow
 
-            Color.CORNSILK,
-            Color.CORAL,
-            
-            Color.GREEN,
-            Color.rgb(181, 230, 29), // Lime
-           
-            Color.rgb(0, 64, 64), // Darker Green
-            Color.TEAL,
-            
-            Color.rgb(0, 162, 232), // Turquoise
-            Color.rgb(153, 217, 234), // Light Turquoise
-            
-            Color.rgb(163, 73, 164), // Purple
-            Color.rgb(200, 191, 231), // Lavender
+        Color.CORNSILK,
+        Color.CORAL,
+        
+        Color.GREEN,
+        Color.rgb(181, 230, 29), // Lime
+        
+        Color.rgb(0, 64, 64), // Darker Green
+        Color.TEAL,
+        
+        Color.rgb(0, 162, 232), // Turquoise
+        Color.rgb(153, 217, 234), // Light Turquoise
+        
+        Color.rgb(163, 73, 164), // Purple
+        Color.rgb(200, 191, 231), // Lavender
 
-            Color.CYAN, 
-            Color.BLUE,
-            
-            Color.rgb(63, 72, 204), // Indigo
-            Color.MAGENTA,
+        Color.CYAN, 
+        Color.BLUE,
+        
+        Color.rgb(63, 72, 204), // Indigo
+        Color.MAGENTA,
 
-            Color.rgb(185, 99, 128), // Brown
-            Color.rgb(255, 174, 201), // Rose
-            
-            Color.WHITE,
-            Color.rgb(195, 195, 195), // Gray 25%
-            
-            Color.WHITE
+        Color.rgb(185, 99, 128), // Brown
+        Color.rgb(255, 174, 201), // Rose
+        
+        Color.WHITE,
+        Color.rgb(195, 195, 195), // Gray 25%
+        
+        Color.WHITE
     };
 
     /**

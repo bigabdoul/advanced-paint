@@ -44,10 +44,10 @@ public class AdvancedPaint extends MouseDraggedBase {
     // This style removes the rounded borders from the button 
     // and sets the same color for a button's text and background.
     private static final String BUTTON_STYLE_FORMAT = 
-            "-fx-background-radius: 0; -fx-text-fill: %s; -fx-background-color: %s; -fx-border-width: 1px; -fx-border-color: gray;";
+        "-fx-background-radius: 0; -fx-text-fill: %s; -fx-background-color: %s; -fx-border-width: 1px; -fx-border-color: gray;";
     
     private static final String BUTTON__HIGHLIGHT_STYLE_FORMAT = 
-            "-fx-background-radius: 0; -fx-text-fill: %s; -fx-background-color: %s; -fx-border-width: 2px; -fx-border-color: white;";
+        "-fx-background-radius: 0; -fx-text-fill: %s; -fx-background-color: %s; -fx-border-width: 2px; -fx-border-color: white;";
 
     /**
      * Initializes a new instance of the {@code AdvancedPaint}
@@ -439,11 +439,11 @@ public class AdvancedPaint extends MouseDraggedBase {
         
         // Add the canvas to the grid in the second column (index=1) and row (index=0);
         // the canvas spans over 1 column and 'buttonLen' rows
-        grid.add(canvas, 
-                canvasColIndex, 
-                /*rowIndex*/ 0, 
-                /*colspan*/ 1,
-                /*rowspan*/ rowCount);
+        grid.add(canvas,
+            canvasColIndex, 
+            /*rowIndex*/ 0, 
+            /*colspan*/ 1,
+            /*rowspan*/ rowCount);
         
         // add all but the last (CLEAR) button
         for (int row = 0; row < rowCount - 1; row++) {
